@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "d4a598da1a91d108fdf86163a19eb4474b4f48af48d01501c491f2ef25e7c1f2",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://developer.close.com/openapi.json"
+  ],
+  "id": "close-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "Close MCP setup and connection checker",
+  "description": "Generate Close MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "close",
+  "appName": "Close",
+  "providerDocs": "https://developer.close.com/openapi.json",
+  "providerWebsite": "https://www.close.com/",
+  "authentication": {
+    "type": "basic",
+    "requiredCredentialFields": [
+      "username",
+      "password"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://developer.close.com/api/overview/api-key-authentication",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-close-mcp",
+  "factory": "leadadapter-pipmcp",
+  "generatorVersion": 1
+}
