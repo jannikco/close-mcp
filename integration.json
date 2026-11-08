@@ -1,38 +1,60 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "d4a598da1a91d108fdf86163a19eb4474b4f48af48d01501c491f2ef25e7c1f2",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://developer.close.com/openapi.json"
-  ],
   "id": "close-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "Close MCP setup and connection checker",
-  "description": "Generate Close MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare Close for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-close-mcp",
+  "sourceRevision": "c7b4186afeb888b2ab4debc7369e59cde0631362756cd69c80a6a7a66599b624",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://developer.close.com/openapi.json"
+  ],
+  "utility": {
+    "problem": "Prepare Close and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "close",
   "appName": "Close",
-  "providerDocs": "https://developer.close.com/openapi.json",
-  "providerWebsite": "https://www.close.com/",
-  "authentication": {
-    "type": "basic",
-    "requiredCredentialFields": [
-      "username",
-      "password"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://developer.close.com/api/overview/api-key-authentication",
-    "tenantRequired": false,
-    "accountParameterNames": []
-  },
-  "attributionSlug": "github-close-mcp"
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  }
 }

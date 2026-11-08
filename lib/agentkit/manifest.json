@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-close",
+      "description": "Connect AI agents to Close using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-close/SKILL.md": "cd36c9dcc5d0a971ee98e515935c00f725afbccae670b5c4ff449196f17d62bf"
+  }
+}
